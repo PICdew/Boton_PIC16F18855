@@ -135,25 +135,6 @@
 #define D5_SetDigitalMode()   do { ANSA3 = 0; } while(0)
 
 
-// get/set D5 aliases
-#define D5_TRIS               TRISA3
-#define D5_LAT                LATA3
-#define D5_PORT               RA3
-#define D5_WPU                WPUA3
-#define D5_ANS                ANSA3
-#define D5_SetHigh()    do { LATA3 = 1; } while(0)
-#define D5_SetLow()   do { LATA3 = 0; } while(0)
-#define D5_Toggle()   do { LATA3 = ~LATA3; } while(0)
-#define D5_GetValue()         PORTAbits.RA3
-#define D5_SetDigitalInput()    do { TRISA3 = 1; } while(0)
-#define D5_SetDigitalOutput()   do { TRISA3 = 0; } while(0)
-
-#define D5_SetPullup()    do { WPUA3 = 1; } while(0)
-#define D5_ResetPullup()   do { WPUA3 = 0; } while(0)
-#define D5_SetAnalogMode()   do { ANSA3 = 1; } while(0)
-#define D5_SetDigitalMode()   do { ANSA3 = 0; } while(0)
-
-
 
 /**
  * @Param
